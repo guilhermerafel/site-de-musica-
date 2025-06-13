@@ -1,0 +1,137 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --cor-fundo: #09090b;
+    --cor-fundo-2: #18181b;
+    --cor-branca: #fff;
+    --cor-preto: #000;
+    --cor-texto: #a1a1aa;
+    --destaque: #f7b733;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 25px 0;
+}
+
+header nav a {
+    color: var(--cor-texto);
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    color: var(--cor-branca);
+    
+}
+
+.btn{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 1px solid var(--cor-branca);
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: var(--cor-branca);
+    color: var(--cor-preto);
+}
+
+.btn-outline{
+    color: var(--cor-branca);
+    background-color: transparent;
+
+}
+
+.btn-primary:hover{
+    color: var(--cor-branca) !important;
+    background-color: transparent !important;
+}
+
+.btn-outline:hover{
+    background-color: var(--cor-branca) !important;
+    color: var(--cor-fundo) !important;
+}
+
+.title{
+    font-size: 4em;
+    color: var(--cor-branca);
+}
+
+.subtitle{
+    font-size: 3em;
+    color: var(--cor-texto);
+    font-weight: 300;
+}
+
+.bg-img{
+    height: 80vh;
+    padding-top: 100px;
+    background-image: url(../img/sol.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bg-secundario{
+    background-color: var(--cor-fundo-2);
+}
+
+main .container div h3{
+    color: var(--destaque);
+}
+
+main .container div h2{
+    color: var(--cor-branca);
+}
+
+main .container div p{
+    color: var(--cor-texto);
+}
+
+footer {
+    padding: 50px;
+}
+
+footer .container div p{
+    color: var(--cor-texto);
+}
+
+footer .img-footer{
+    text-align: center;
+    padding-bottom: 50px;
+}
